@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
-import axios from "axios";
 import "../css/Home.css";
 
 const api_base = "http://localhost:8000";
@@ -69,7 +68,7 @@ export default function Home() {
         <h1 style={{ textAlign: "center" }}>Hello {location.state.id}</h1>
 
         <Link style={{ marginLeft: "48%" }} className="link-login" to="/signup">
-          Go Back
+          Sign Out
         </Link>
       </div>
 
